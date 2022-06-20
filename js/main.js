@@ -1,21 +1,22 @@
-/*Функция, возвращающая случайное целое число из переданного диапазона.
- https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/random*/
+/*
+Функция, возвращающая случайное целое число из переданного диапазона.
+ https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+ */
 
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min;
+function randomInteger(min, max) {
+  const rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
 }
+randomInteger(0,8);
 
-getRandomInt(1, 9);
-
-/*Функция для проверки максимальной длины строки
-https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/length*/
+/*
+Функция для проверки максимальной длины строки
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/length
+*/
 
 function checkComment(string, maxSybols) {
   if (string.length <= maxSybols) {
     return true;
-  }
+  } return false;
 }
-
-checkComment ('Пример функции', 8);
+checkComment ('Пример функции',8);
