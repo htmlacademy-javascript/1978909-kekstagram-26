@@ -19,4 +19,4 @@ function checkComment(string, maxSybols) {
     return true;
   } return false;
 }
-checkComment ('Пример функции',8);
+checkComment('Пример функции',8);
